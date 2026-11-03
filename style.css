@@ -148,4 +148,18 @@ footer{padding:25px 0 35px;color:var(--muted);font-size:11px}
   .section-title h2{font-size:20px}
   .footer-inner{flex-direction:column}
 }
+
+/* YouTube playlist embed */
+.playlist-feature{margin-top:17px;padding:20px;background:linear-gradient(135deg,#fff 0%,#fffaf8 100%);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}
+.playlist-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:15px}
+.playlist-kicker{font-size:9px;letter-spacing:.15em;font-weight:900;color:var(--accent-dark)}
+.playlist-heading h3{font-size:17px;margin:5px 0 4px}
+.playlist-heading p{font-size:12px;color:var(--muted);margin:0}
+.playlist-link{flex-shrink:0;font-size:11px;font-weight:800;color:var(--accent-dark);background:var(--accent-soft);padding:10px 13px;border-radius:999px;transition:transform .2s ease,background .2s ease}
+.playlist-link:hover{transform:translateY(-2px);background:#eee5f5}
+.video-frame{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;border-radius:16px;background:#17141a}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.playlist-caption{font-size:10px;color:var(--muted);margin:10px 2px 0}
+@media(max-width:760px){.playlist-feature{padding:14px;border-radius:18px}.playlist-heading{align-items:flex-start;flex-direction:column;gap:10px}.playlist-heading h3{font-size:15px}.video-frame{border-radius:12px}}
+
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
